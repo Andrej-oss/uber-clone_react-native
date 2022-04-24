@@ -1,8 +1,9 @@
 import React from 'react';
 import { Image, SafeAreaView, StyleSheet, View } from "react-native";
 import tw from 'tailwind-react-native-classnames';
+import { NavOptions } from "../components/index";
 
-const MyComponent = () => {
+const HomeScreen = () => {
   return (
       <SafeAreaView style={tw`bg-white h-full`}>
         <View style={tw`p-5`}>
@@ -16,10 +17,11 @@ const MyComponent = () => {
                 uri: "https://links.papareact.com/gzs"
               }}/>
         </View>
+        <NavOptions />
       </SafeAreaView>
   );
 };
 
-export default MyComponent;
+export default HomeScreen;
 
 const styles = StyleSheet.create({})
